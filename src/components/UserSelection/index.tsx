@@ -149,7 +149,7 @@ export default memo(({ selectionKeyPressed }: UserSelectionProps) => {
       {userSelectionRect.draw && (
         <div
           className="react-flow__selection react-flow__container"
-          style={{
+          css={{
             width: userSelectionRect.width,
             height: userSelectionRect.height,
             transform: `translate(${userSelectionRect.x}px, ${userSelectionRect.y}px)`,

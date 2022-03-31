@@ -4,11 +4,16 @@ import cc from 'classcat';
 import { useStore, useStoreApi } from '../../store';
 import useReactFlow from '../../hooks/useReactFlow';
 
-import PlusIcon from '../../../assets/icons/plus.svg';
-import MinusIcon from '../../../assets/icons/minus.svg';
-import FitviewIcon from '../../../assets/icons/fitview.svg';
-import LockIcon from '../../../assets/icons/lock.svg';
-import UnlockIcon from '../../../assets/icons/unlock.svg';
+// @ts-ignore
+import PlusIcon from '../../icons/PlusIcon';
+// @ts-ignore
+import MinusIcon from '../../icons/MinusIcon';
+// @ts-ignore
+import FitviewIcon from '../../icons/FitViewIcon';
+// @ts-ignore
+import LockIcon from '../../icons/LockIcon';
+// @ts-ignore
+import UnlockIcon from '../../icons/UnlockIcon';
 
 import { ControlProps, ControlButtonProps, ReactFlowState } from '../../types';
 
@@ -74,7 +79,7 @@ const Controls: FC<ControlProps> = ({
   }
 
   return (
-    <div className={mapClasses} style={style}>
+    <div className={mapClasses} css={style || {}}>
       {showZoom && (
         <>
           <ControlButton

@@ -15,7 +15,7 @@ function Viewport({ children }: ViewportProps) {
   return (
     <div
       className="react-flow__viewport react-flow__container"
-      style={{ transform: `translate(${transform[0]}px,${transform[1]}px) scale(${transform[2]})` }}
+      css={{ transform: `translate(${transform[0]}px,${transform[1]}px) scale(${transform[2]})` }}
     >
       {children}
     </div>

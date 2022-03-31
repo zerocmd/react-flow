@@ -112,7 +112,7 @@ function NodesSelection({
   }
 
   return (
-    <div className={cc(['react-flow__nodesselection', 'react-flow__container', noPanClassName])} style={style}>
+    <div className={cc(['react-flow__nodesselection', 'react-flow__container', noPanClassName])} css={style}>
       <DraggableCore
         scale={tScale}
         grid={grid}
@@ -126,7 +126,7 @@ function NodesSelection({
           ref={nodeRef}
           className="react-flow__nodesselection-rect"
           onContextMenu={onContextMenu}
-          style={innerStyle}
+          css={innerStyle}
         />
       </DraggableCore>
     </div>

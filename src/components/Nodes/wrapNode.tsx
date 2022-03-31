@@ -247,7 +247,7 @@ export default (NodeComponent: ComponentType<NodeProps>) => {
         <div
           className={nodeClasses}
           ref={nodeElement}
-          style={nodeStyle}
+          css={nodeStyle}
           onMouseEnter={onMouseEnterHandler}
           onMouseMove={onMouseMoveHandler}
           onMouseLeave={onMouseLeaveHandler}

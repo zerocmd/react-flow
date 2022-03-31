@@ -36,7 +36,7 @@ const Background: FC<BackgroundProps> = ({
   return (
     <svg
       className={bgClasses}
-      style={{
+      css={{
         ...style,
         width: '100%',
         height: '100%',

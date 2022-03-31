@@ -73,7 +73,7 @@ const MiniMap = ({
       width={elementWidth}
       height={elementHeight}
       viewBox={`${x} ${y} ${width} ${height}`}
-      style={style}
+      css={style}
       className={mapClasses}
     >
       {Array.from(nodeInternals)

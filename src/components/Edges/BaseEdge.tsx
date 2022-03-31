@@ -32,7 +32,7 @@ export default ({
 
   return (
     <>
-      <path style={style} d={path} className="react-flow__edge-path" markerEnd={markerEnd} markerStart={markerStart} />
+      <path css={style} d={path} className="react-flow__edge-path" markerEnd={markerEnd} markerStart={markerStart} />
       {text}
     </>
   );

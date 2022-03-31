@@ -50,12 +50,12 @@ const EdgeText: FC<EdgeTextProps> = ({
           y={-labelBgPadding[1]}
           height={edgeTextBbox.height + 2 * labelBgPadding[1]}
           className="react-flow__edge-textbg"
-          style={labelBgStyle}
+          css={labelBgStyle}
           rx={labelBgBorderRadius}
           ry={labelBgBorderRadius}
         />
       )}
-      <text className="react-flow__edge-text" y={edgeTextBbox.height / 2} dy="0.3em" ref={edgeRef} style={labelStyle}>
+      <text className="react-flow__edge-text" y={edgeTextBbox.height / 2} dy="0.3em" ref={edgeRef} css={labelStyle}>
         {label}
       </text>
       {children}
