@@ -153,7 +153,7 @@ export default ({
 
   return (
     <g className="react-flow__connection">
-      <path d={dAttr} className="react-flow__connection-path" style={connectionLineStyle} />
+      <path d={dAttr} className="react-flow__connection-path" css={connectionLineStyle} />
     </g>
   );
 };

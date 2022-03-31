@@ -72,7 +72,7 @@ function NodesSelection({
   return (
     <div
       className={cc(['react-flow__nodesselection', 'react-flow__container', noPanClassName])}
-      style={{
+      css={{
         transform: `translate(${transform[0]}px,${transform[1]}px) scale(${transform[2]})`,
       }}
     >
@@ -80,7 +80,7 @@ function NodesSelection({
         ref={nodeRef}
         className="react-flow__nodesselection-rect"
         onContextMenu={onContextMenu}
-        style={{
+        css={{
           width,
           height,
           top,

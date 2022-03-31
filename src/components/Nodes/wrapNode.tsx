@@ -130,7 +130,7 @@ export default (NodeComponent: ComponentType<NodeProps>) => {
           },
         ])}
         ref={nodeRef}
-        style={{
+        css={{
           zIndex,
           transform: `translate(${xPos}px,${yPos}px)`,
           pointerEvents: hasPointerEvents ? 'all' : 'none',

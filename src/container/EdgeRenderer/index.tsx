@@ -88,7 +88,7 @@ const EdgeRenderer = (props: EdgeRendererProps) => {
       {edgeTree.map(({ level, edges, isMaxLevel }) => (
         <svg
           key={level}
-          style={{ zIndex: level }}
+          css={{ zIndex: level }}
           width={width}
           height={height}
           className="react-flow__edges react-flow__container"

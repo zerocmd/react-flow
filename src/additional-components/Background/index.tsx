@@ -42,7 +42,7 @@ const Background: FC<BackgroundProps> = ({
   return (
     <svg
       className={cc(['react-flow__background', 'react-flow__container', className])}
-      style={{
+      css={{
         ...style,
         width: '100%',
         height: '100%',
