@@ -1,5 +1,5 @@
 {
-  "name": "@frattaro/react-flow-renderer",
+  "name": "@zerocmd/react-flow-renderer",
   "version": "10.0.7",
   "engines": {
     "node": ">=12"
@@ -10,11 +10,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wbkd/react-flow.git"
+    "url": "https://github.com/zerocmd/react-flow.git"
   },
   "scripts": {
     "build:lib": "babel src --out-dir lib --copy-files --extensions \".ts,.tsx\" ",
-    "publish-package": "rimraf lib && npm ci && npm run build && npm publish",
+    "publish-package": "rimraf lib && npm ci && npm run build:lib && npm publish",
     "build": "rollup -c --environment NODE_ENV:production && postcss src/*.css --dir dist",
     "start": "rollup -w -c",
     "start:examples": "cd example && npm start",
@@ -66,5 +66,8 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/zerocmd"
+  }
 }
